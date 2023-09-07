@@ -17,6 +17,15 @@ io.on('connection', (socket) => {
     console.log('A user disconnected');
   });
 });
+
+// app.set("socketio", io);
+// io.on("connection", function (socket) {
+//   console.log("new connection made!");
+//   socket.on("disconnect", function () {
+//     console.log("disconnected!");
+//   });
+// });
+
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
