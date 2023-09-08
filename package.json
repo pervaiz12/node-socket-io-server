@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e js, -w . -w public -w views -w routes -w models server.js",
+    "docker-local": "docker-compose up -d --build --remove-orphans"
+
   },
   "keywords": [],
   "author": "",
@@ -12,6 +15,8 @@
   "dependencies": {
     "expres": "0.0.5",
     "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "nodemon": "^3.0.1",
     "socket.io": "^4.7.2"
   }
 }
